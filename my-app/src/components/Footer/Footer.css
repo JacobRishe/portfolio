@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.row{
+    color: #000;
+    display: flex;
+}
+
+.col {
+    width: 100%;
+    
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+}
