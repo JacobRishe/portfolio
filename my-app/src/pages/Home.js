@@ -1,10 +1,18 @@
 import React from 'react'
+import './Home.css'
+import Image from '../images/portfoliopic1.png'
 
 export default function Home() {
     return (
-        <div>
-            <h1>Why Should you hire me?</h1>
-            <p>insert an animation of words popping up such as learned from scratch, self-starter, devoted, persistant, independent, </p>
+        <div className="container">
+            <div className="text-container">
+                <h1 className="jacob">welcome I'm,</h1>
+                <p className="my-projects">Jacob Rishe</p>
+                <div className="hiding-effect"></div>
+             </div>
+            <div className="img-container">
+                <img src={ Image } alt="portfolio-img" />
+            </div>
         </div>
     )
 }
