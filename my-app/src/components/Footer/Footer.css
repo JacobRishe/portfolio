@@ -1,21 +1,38 @@
 .footer {
     width: 100%;
-    position: absolute;
     bottom: 0;
     text-align: center;
+    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .row{
-    color: #000;
+    color: #fff;
     display: flex;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
 }
 
 .col {
     width: 100%;
-    
+}
+
+.list-style {
+    text-align: center;
+    margin-left: -40px;
+}
+
+.header-title {
+    font-weight: 400;
 }
 
 li {
     text-decoration: none;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.copyright {
+    font-family: 'Poppins', sans-serif;
 }

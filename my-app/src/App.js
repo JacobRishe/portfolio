@@ -4,10 +4,9 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import Landing from './pages/Landing';
 
 
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 function App() {
   return (
@@ -19,10 +18,7 @@ function App() {
     <Switch>
       <Route path='/projects' component = { Projects } />
       <Route path='/contact' component = { Contact } />
-      <Route path='/home' component = { Home } />
-    <div className="landing-container">
-      <Route path='/' component = { Landing } />
-    </div>
+      <Route path='/' component = { Home } />
     </Switch>
     <Footer />
     </div>

@@ -1,20 +1,27 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(112, 85, 250) 0%, rgb(96, 65, 247) 100%);
+    /* background: linear-gradient(90deg, rgb(112, 85, 250) 0%, rgb(96, 65, 247) 100%); */
+    background: #000;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
 }
 
 .navbar-logo {
-    color: #000;
+    color: #fff;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     font-family: 'Philosopher', sans-serif;
     font-weight: 900;
     font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.letter-r {
+    position: absolute;
+    margin-top: 7px;
 }
 
 .nav-menu {
@@ -32,10 +39,10 @@
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     letter-spacing: 2px;
-    color: #000;
+    color: #fff;
 }
 
 .nav-links:hover {
@@ -86,7 +93,6 @@
         text-align: center;
         padding: 2rem 1rem;
         width: 100%;
-        /* display: table; */
         font-size: 25px;
     }
 
@@ -103,8 +109,8 @@
 
     .navbar-logo {
         position: absolute;
-        top: 0;
         left: 0;
+        margin-top: 20px;
     }
 
     .menu-icon {
