@@ -1,10 +1,11 @@
 import React from 'react'
+import ProjectCard from '../components/Project/ProjectCard'
+
 
 export default function Projects() {
     return (
         <div>
-            <h1>my projects</h1>
+            <ProjectCard />
         </div>
     )
 }
-
