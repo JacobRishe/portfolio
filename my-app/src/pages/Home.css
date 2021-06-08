@@ -26,7 +26,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #000;
+    background: #111318;
     z-index: 100;
     color: #fff;
     text-align: center;
@@ -42,7 +42,7 @@
     width: 100%;
     height: 100vh;
     opacity: 0;
-    background: #000;
+    background: #111318;
     z-index: -100;
     transition: all 0.9s;
     color: #fff;
@@ -58,52 +58,70 @@
     letter-spacing: 3px;
 }
 
-.R {
-   position: absolute;
-   margin-top: 15px;
+/* -----------------------image/text animation------------- */
+
+section {
+    height: 500px;
 }
 
-
-/* -----------------------image/text animation------------- */
 .container {
-    text-align: center; 
+    text-align: center;
     width: 100%;
-    height: 100vh;
     display: block;
-    position: relative;
     overflow: hidden;
     margin: 0;
-    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/793.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #111318;
 }
 
 .img-container {
     position: absolute;
-    top: 45%;
+    top: 48%;
     left: 20%;
-    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     z-index: 2;
 }
 
 .img-container img {
-    -webkit-animation: image-slide 4s cubic-bezier(.5,0,.5,1);
     animation: image-slide 4s cubic-bezier(.5,0,.5,1);
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
-    -webkit-filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
     filter: drop-shadow(-4px 5px 5px rgba(0,0,0,0.6));
     height: 300px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    background: #000;
-    background: no-repeat;
+    border: NONE;
+    border-radius: 18%;
+    -webkit-box-shadow: 2px 2px 20px 2px #ccc;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 1px 2px 1px 1px #fff;
+    margin-left: -25px;
+}
+
+.line {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 45px;
+    height: 1px;
+    background-color: #a8afc2;
+    margin-top: -48px;
+    margin-left: 72px;
+}
+
+.line2 {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: #a8afc2;
+    margin-top: 152px;
+    margin-left: 72px;
 }
 
 .text-container {
     position: absolute;
-    top: 15%;
+    top: 19%;
     left: 50%;
     width: 100%;
     -webkit-transform: translate(-50%,-50%);
@@ -112,16 +130,16 @@
 }
 
 .welcome-text {
-    color: #f5f5f7;
-    font-size: 24px;
+    color: #A5ABBE;
+    font-size: 16px;
     line-height: 1.16667;
-    font-weight: 600;
     letter-spacing: .009em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
 }
 
-.my-projects {  
-    background: radial-gradient(#eff1ff, #000);
+.jacob-text {  
+    background: #fff;
     background-size: 100% 200%;
     background-position: 50% 100%;
     -webkit-background-clip: text;
@@ -136,13 +154,34 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* ----------------------section2------------------------------------- */
+.section2 {
+    background-image: url('https://lh3.googleusercontent.com/proxy/Joz4Tz9WnfdM9gWcy1T3lEildrDW4HgXLQX-cp-PE0SfutT2kQ4Pd2sOGTFenqdI7Ke3u0Z8687y8a5bx8CR05DoCs1O4WCQp02YWyN5WFJZpUIUQ1S3CYFUZB-UyNM');
+    background-size: cover;
+}
+
+.container2 {
+    margin-top: 550px;
+}
+
+.get-to-know-me {
+    color: #A5ABBE;
+    font-size: 16px;
+    line-height: 1.16667;
+    letter-spacing: .009em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-left: 45%;
+    width: 100%;
+}
+
 .hiding-effect {
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     width: 100%;
-    background: #000;
+    background: #111318;
     -webkit-animation: text-slide 4s cubic-bezier(.5,.5,0,1);
     animation: text-slide 4.2s cubic-bezier(.5,.5,0,1);
     animation-fill-mode: forwards;
