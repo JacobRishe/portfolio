@@ -4,7 +4,7 @@
     justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
-    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.3));
+    background-color: #111318;
 }
 
 .navbar-logo {
@@ -25,7 +25,7 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
@@ -38,17 +38,18 @@
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     letter-spacing: 2px;
-    color: #fff;
+    text-transform: capitalize;
 }
 
 .nav-links:hover {
-    background-color: #737cfa;
+    background-color: #fff;
+    color: #111318;
     border-radius: 4px;
     transition: all 0.2s ease-out;
-}
+    }
 
 .fa-bars {
     color: #fff;
@@ -80,8 +81,8 @@
     }
 
     .nav-menu.active {
-        background: #000;
-        border: 14px solid rgb(28, 231, 131);
+        background: #ffffffe0;
+        border: 8px solid #fff;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -94,6 +95,7 @@
         padding: 2rem 1rem;
         width: 100%;
         font-size: 25px;
+        color: #111318;
     }
 
     .links {
