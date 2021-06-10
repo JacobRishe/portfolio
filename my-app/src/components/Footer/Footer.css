@@ -2,8 +2,6 @@ footer {
     width: 100%;
     bottom: 0;
     text-align: center;
-    margin-top: 100px;
-    padding-top: 100px;
 }
 
 .col {
@@ -12,6 +10,10 @@ footer {
 
 .row {
     display: none;
+}
+
+.row2 {
+    color: #fff;
 }
 
 
