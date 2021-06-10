@@ -103,19 +103,7 @@ section {
     width: 45px;
     height: 1px;
     background-color: #a8afc2;
-    margin-top: -48px;
-    margin-left: 72px;
-}
-
-.line2 {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 40px;
-    height: 1px;
-    background-color: #a8afc2;
-    margin-top: 152px;
+    margin-top: -45px;
     margin-left: 72px;
 }
 
@@ -136,6 +124,7 @@ section {
     letter-spacing: .009em;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
+    margin-bottom: 0;
 }
 
 .jacob-text {  
@@ -145,23 +134,14 @@ section {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 16px;
+    margin-top: 10px;
     padding-bottom: 12px;
     font-size: 45px;
     line-height: 1.08349;
+    letter-spacing: 1px;
     font-weight: 700;
-    letter-spacing: -.003em;
+    letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
-}
-
-/* ----------------------section2------------------------------------- */
-.section2 {
-    background-image: url('https://lh3.googleusercontent.com/proxy/Joz4Tz9WnfdM9gWcy1T3lEildrDW4HgXLQX-cp-PE0SfutT2kQ4Pd2sOGTFenqdI7Ke3u0Z8687y8a5bx8CR05DoCs1O4WCQp02YWyN5WFJZpUIUQ1S3CYFUZB-UyNM');
-    background-size: cover;
-}
-
-.container2 {
-    margin-top: 550px;
 }
 
 .get-to-know-me {
@@ -187,6 +167,36 @@ section {
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 }
+
+/* ----------------------section2------------------------------------- */
+.section2 {
+    background-color: #fff;
+    color: #111318;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container2 {
+    margin-top: 550px;
+}
+
+.focus-in-design {
+    margin-bottom: 0;
+}
+
+.software-engineer {
+    margin-top: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
 
 @media screen and (min-width: 500px) {
     .container {
