@@ -36,7 +36,6 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="row2">
-                <hr />
                     <p className="copyright">
                         &copy;{ new Date().getFullYear() } Jacob Rishe | All rights reserved.
                     </p>
