@@ -18,6 +18,10 @@
     100% { width: 0; }
   }
 
+  .content-wrapper {
+    margin-bottom: 20px;
+  }
+
 /* ---------------------splash page---------------------- */
 
 .splash {
