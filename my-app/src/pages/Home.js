@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.css'
 import Image from '../images/portfoliopic1.png'
-// import photo from '../images/Poto.jpg'
-// import ProjectCard from '../components/Project/ProjectCard'
+import photo from '../images/potocoverphoto.jpg'
+import ProjectCard from '../components/Project/ProjectCard'
 
 const splash = document.querySelector('.splash');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
 export default function Home() {
     return (
-        <div>
+        <div className="content-wrapper">
             <section>
                 <div className="container">
                     <div className="text-container">
@@ -30,17 +30,26 @@ export default function Home() {
                 </div>
             </section>
             <section className="section2">
-                <p>Focus in Design</p>
-                <h1>Software Engineer</h1>
-            </section>
-        </div>
-    )
-}
-
-/* <div className="project-section">
+                <p className="focus-in-design">Focus in Design</p>
+                <h1 className="software-engineer">Software Engineer</h1>
+                <div className="project-section">
+                    <ProjectCard 
+                    title='Full Stack App'
+                    photo={ photo } 
+                    body='React'
+                    />
                     <ProjectCard 
                     title='PoTo'
                     photo={ photo }
                     body='testing'
                     />
-                </div> */
+                    <ProjectCard 
+                    title='PoTo'
+                    photo={ photo }
+                    body='testing'
+                    />
+                </div> 
+            </section>
+        </div>
+    )
+}
