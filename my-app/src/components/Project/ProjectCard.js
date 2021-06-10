@@ -8,17 +8,12 @@ export default function ProjectCard({title, photo, body}) {
                 <img src={ photo } alt='' />
             </div>
             <div className="card-content">
-                <div className="card-title">
-                    <h3>{ title }</h3>
-                </div>
-                <div className="card-body">
-                    <p>{ body }</p>
-                </div>
+            <div className="card-body">
+                    <p className="card-paragraph">{ body }</p>
             </div>
-            <div className="btn">
-                <button>
-                    <a href='/Projects'>View</a>
-                </button>
+            <div className="card-title">
+                <h3 className="card-title">{ title }</h3>
+            </div>
             </div>
         </div>
     )
