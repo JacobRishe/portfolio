@@ -9,15 +9,16 @@
 } */
 
 .card-container {
-    width: 310px;
+    width: 300px;
     height: 460px;
-    box-shadow: -1px 9px 6px 1px #11131821;
+    box-shadow: -1px 9px 6px 1px #eff1ff14;
     overflow: hidden;
     transition: 0.3s;
     animation: ease-in;
     text-align: center;
     border-radius: 10px;
     margin-top: 20px;
+    background: linear-gradient(to right bottom, #1f224b 0%, #2d5d85 100%);
 }
 
 .card-container:hover {
@@ -25,10 +26,33 @@
     box-shadow: 0px 0px 15px 0px;
 }
 
+.about-section {
+    background: linear-gradient(to right bottom, #1f224b 0%, #2d5d85 100%);
+    border-radius: 25px;
+    height: 528px;
+    color: #fff;
+    line-height: 25.2px;
+    padding: 20px;
+    font-family: 'Lato';
+    font-size: 20px;
+    width: 285px;
+}
+
+.project-section {
+    border-radius: 25px;
+    height: 528px;
+    color: #fff;
+    line-height: 25.2px;
+    padding: 20px;
+    font-family: 'Lato';
+    font-size: 20px;
+    width: 300px;
+}
+
 .image-container img {
     overflow: hidden;
     height: 365px;
-    width: 320px;
+    width: 300px;
 }
 
 .card-content {
@@ -36,6 +60,25 @@
     text-align: left;
     margin-left: 25px;
 }
+
+.focus-in-design {
+    margin: 0;
+    color: #A5ABBE;
+    padding-bottom: 5px;
+}
+
+.my-projects{
+    margin-top: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.software-engineer {
+    margin-top: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
 
 .card-title {
     font-size: 18px;
