@@ -25,13 +25,21 @@ export default function Home() {
                     </div>
                     <div className="img-container">
                         <img src={ Image } alt="portfolio-img" />
-                        <p className="get-to-know-me">GET TO KNOW ME ➤</p>
                     </div>
                 </div>
             </section>
             <section className="section2">
-                <p className="focus-in-design">Focus in Design</p>
-                <h1 className="software-engineer">Software Engineer</h1>
+                <div className="about-section">
+                    <p className="focus-in-design">Focus in Design</p>
+                    <h1 className="software-engineer">Software Engineer</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum deleniti, nobis repellat neque ecia mollitia magni voluptatum cum possimus explicabo a, commodi voluptates! Magnam ut illo quibusdam debitis?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero quas ut voluptates laborum eius eveniet, impedit ullam excepturi autem sit. Nesciunt sed id reiciendis esse, beatae necessitatibus tempora doloribus.</p>
+                    <p className="get-to-know-me">GET TO KNOW ME ➤</p>
+                </div> 
+            </section>
+            <section className="section3">
+                <p className="focus-in-design"></p>
+                <h1 className="my-projects">My Projects</h1>
                 <div className="project-section">
                     <ProjectCard 
                     title='Full Stack App'
