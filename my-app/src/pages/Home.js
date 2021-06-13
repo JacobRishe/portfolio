@@ -3,6 +3,7 @@ import './Home.css'
 import Image from '../images/portfoliopic1.png'
 import photo from '../images/potocoverphoto.jpg'
 import ProjectCard from '../components/Project/ProjectCard'
+import {navLink} from 'react-router-dom'
 
 const splash = document.querySelector('.splash');
 
@@ -34,7 +35,7 @@ export default function Home() {
                     <h1 className="software-engineer">Software Engineer</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum deleniti, nobis repellat neque ecia mollitia magni voluptatum cum possimus explicabo a, commodi voluptates! Magnam ut illo quibusdam debitis?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero quas ut voluptates laborum eius eveniet, impedit ullam excepturi autem sit. Nesciunt sed id reiciendis esse, beatae necessitatibus tempora doloribus.</p>
-                    <p className="get-to-know-me">GET TO KNOW ME ➤</p>
+                    <navLink to="/Projects">GET TO KNOW ME</navLink>
                 </div> 
             </section>
             <section className="section3">
