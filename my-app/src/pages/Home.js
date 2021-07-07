@@ -3,6 +3,8 @@ import './Home.css'
 import Image from '../images/portfoliopic1.png'
 import photo from '../images/potocoverphoto.jpg'
 import ProjectCard from '../components/Project/ProjectCard'
+import picture from '../images/mooviewiz.jpeg'
+import wayfarerpic from '../images/wayfarerpic.jpeg'
 
 const splash = document.querySelector('.splash');
 
@@ -11,6 +13,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
     splash.classList.add('display-none');
   }, 2000);
 })
+
 
 export default function Home() {
     return (
@@ -45,22 +48,25 @@ export default function Home() {
                     <ProjectCard 
                     title='Full Stack App'
                     photo={ photo } 
-                    body='React'
+                    body='MERN Stack'
+                    link='https://github.com/JacobRishe/Poto-Frontend'
                     />
                     <ProjectCard 
-                    title='PoTo'
-                    photo={ photo }
-                    body='testing'
+                    title='Moovie Wiz'
+                    photo={ picture }
+                    body='API App'
+                    link='https://github.com/JacobRishe/API_APP'
                     />
                     <ProjectCard 
-                    title='PoTo'
-                    photo={ photo }
-                    body='testing'
+                    title='Wayfarer'
+                    photo={ wayfarerpic }
+                    body='Python'
+                    link='https://wayfarer-sei.herokuapp.com/'
                     />
                 </div> 
             </section>
             <section className="section4">
-                <h1>section 4</h1>
+                <h1>SKILLS</h1>
             </section>
         </div>
     )
