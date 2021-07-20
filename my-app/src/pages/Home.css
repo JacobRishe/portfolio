@@ -18,6 +18,11 @@
     100% { width: 0; }
   }
 
+  :root {
+      --heading-font: 'Lato', sans-serif;
+      --accent-font: 'Philosopher', sans-serif;
+  }
+
 /* ---------------------splash page---------------------- */
 
 .splash {
@@ -31,7 +36,7 @@
     color: #fff;
     text-align: center;
     line-height: 90vh;
-    font-family: 'Philosopher', sans-serif;
+    font-family: var(--heading-font);
     font-size: 30px;
 }
 
@@ -48,7 +53,7 @@
     color: #fff;
     text-align: center;
     line-height: 90vh;
-    font-family: 'Philosopher', sans-serif;
+    font-family: var(--heading-font);
     font-size: 30px;
 }
 
@@ -61,7 +66,7 @@
 /* -----------------------image/text animation------------- */
 
 section {
-    height: 246px;
+    height: 213px;
 }
 
 .container {
@@ -134,7 +139,7 @@ section {
     letter-spacing: 1px;
     font-weight: 700;
     letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--heading-font);
 }
 
 .get-to-know-me {
@@ -200,7 +205,7 @@ section {
     filter: brightness(0.5);
 }
 
-.projects{
+.projects {
     margin-top: 35px;
     margin-right: 11px;
     padding-bottom: 12px;
@@ -208,6 +213,11 @@ section {
     letter-spacing: 2px;
 }
 
+.skills-title {
+    font-family: var(--heading-font);
+}
+
+/* ------------------desktop------------------------------------------ */
 @media screen and (min-width: 500px) {
     .container {
         /* margin: 20px;
