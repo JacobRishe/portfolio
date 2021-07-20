@@ -4,7 +4,7 @@ import './Project.css'
 export default function ProjectCard({title, photo, body, link}) {
     return (
         <div className="card-container">
-            <a href={ link }>
+            <a className="card-link" href={ link }>
                 <div className="image-container">
                     <img src={ photo } alt='' />
                 </div>
