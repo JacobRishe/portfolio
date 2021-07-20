@@ -66,7 +66,7 @@ export default function Home() {
                 </div> 
             </section>
             <section className="section4">
-                <h1>SKILLS</h1>
+                <h1 className="skills-title">SKILLS</h1>
             </section>
         </div>
     )
