@@ -1,0 +1,30 @@
+.skillsCard-container {
+    text-align: center;
+
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.skills-card {
+    color: #fff;
+    font-size: 12px;
+}
+
+.skills-title {
+    z-index: 10;
+    margin-top: -70px;
+}
+
+.my2 {
+    background: radial-gradient(#eff1ff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(0.5);
+    font-size: 95px;
+    margin: auto;
+}
