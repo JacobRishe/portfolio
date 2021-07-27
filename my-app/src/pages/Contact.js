@@ -1,9 +1,10 @@
 import React from 'react'
+import ContactCard from '../components/Contact/ContactCard.js'
 
 export default function Contact() {
     return (
         <div>
-            <h1>this is the contact page</h1>
+            <ContactCard />
         </div>
     )
 }
