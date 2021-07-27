@@ -1,6 +1,7 @@
 :root {
-    --font-family: 'Philosopher', sans-serif;
-  }
+  --heading-font: 'Lato', sans-serif;
+  --accent-font: 'Philosopher', sans-serif;
+}
 
 html {
     height: 100%;
