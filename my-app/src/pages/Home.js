@@ -3,6 +3,7 @@ import './Home.css'
 import Image from '../images/portfoliopic1.png'
 import photo from '../images/potocoverphoto.jpg'
 import ProjectCard from '../components/Project/ProjectCard'
+import SkillsCard from '../components/Skills/SkillsCard'
 import picture from '../images/mooviewiz.jpeg'
 import wayfarerpic from '../images/wayfarerpic.jpeg'
 
@@ -66,7 +67,30 @@ export default function Home() {
                 </div> 
             </section>
             <section className="section4">
-                <h1 className="skills-title">SKILLS</h1>
+                <div className="skillsCard-container">
+                    <h1 className="my2">MY</h1>
+                    <h1 className="skills-title">SKILLS</h1>
+                    <div className="skills-container">
+                        <SkillsCard
+                        title='JavaScript'
+                        />
+                        <SkillsCard
+                        title='React'
+                        />
+                        <SkillsCard
+                        title='Html'
+                        />
+                        <SkillsCard
+                        title='Css'
+                        />
+                        <SkillsCard
+                        title='Figma'
+                        />
+                        <SkillsCard
+                        title='Wordpress'
+                        />
+                    </div>
+                </div>
             </section>
         </div>
     )
