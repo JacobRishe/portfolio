@@ -6,46 +6,75 @@ import ProjectCard from '../components/Project/ProjectCard'
 import SkillsCard from '../components/Skills/SkillsCard'
 import picture from '../images/mooviewiz.jpeg'
 import wayfarerpic from '../images/wayfarerpic.jpeg'
+import { Link } from 'react-router-dom'
+import { FaGithub } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
+import { AiFillGithub } from 'react-icons/ai'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { DiCss3 } from 'react-icons/di'
+import { DiJavascript1 } from 'react-icons/di'
+
 
 const splash = document.querySelector('.splash');
 
 document.addEventListener('DOMContentLoaded', (e) => {
   setTimeout(() => {
     splash.classList.add('display-none');
-  }, 2000);
+  }, 1000);
 })
-
 
 export default function Home() {
     return (
-        <div className="content-wrapper">
-            <section>
-                <div className="container">
-                    <div className="text-container">
-                        <span className="line"></span>
-                        <p className="welcome-text">WELCOME, I'M</p>
-                        <h1 className="jacob-text">Jacob Rishe</h1>
-                        <div className="hiding-effect"></div>
-                    </div>
-                    <div className="img-container">
-                        <img src={ Image } alt="portfolio-img" />
+        <div className='container'>
+            <div className='topContainer'>
+                <div className="textWrapper">
+                    <p className="welcomeText">Welcome, I'm</p>
+                    <h1 className="nameText">Jacob Rishe</h1>
+                    <div className="hidingEffect"></div>
+                    <div className='iconContainer'>
+                        <div className='iconsWrapper'>
+                            <FaReact size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <AiFillGithub size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <DiCss3 size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <DiJavascript1 size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <AiFillHtml5 size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <AiFillHtml5 size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <AiFillHtml5 size={50}/>
+                        </div>
+                        <div className='iconsWrapper'>
+                            <AiFillHtml5 size={50}/>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <section className="section2">
-                <div className="about-section">
-                    <p className="focus-in-design">Focus in Design</p>
-                    <h1 className="software-engineer">Software Engineer</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum deleniti, nobis repellat neque ecia mollitia magni voluptatum cum possimus explicabo a, commodi voluptates! Magnam ut illo quibusdam debitis?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero quas ut voluptates laborum eius eveniet, impedit ullam excepturi autem sit. Nesciunt sed id reiciendis esse, beatae necessitatibus tempora doloribus.</p>
-                    <p className="get-to-know-me">GET TO KNOW ME ➤</p>
-                </div> 
-            </section>
-            <section className="section3">
-                <p className="focus-in-design"></p>
-                <h1 className="my">MY</h1>
-                <h2 className="projects">Projects</h2>
-                <div className="project-section">
+                <div className="imgWrapper">
+                    <img src={ Image } alt="portfolio-img" />
+                </div>
+                <div className="aboutSection">
+                    <p className="focusText">Focus in Design</p>
+                    <h1 className="softEngineerText">Software Engineer</h1>
+                    <p>Desiring a professional career building applications in React Native.</p>
+                    <p>Experienced with integrating many native packages such as mapbox, calendars, icons, drawer, bottom sheet and more. Created a full stack responsive React Native app with auth and API calls through the use of axios, formik, and MongoDB. Allowed users to utilize CRUD functionality by creating state managmenet, hooks, and DOM manipulation.</p>
+                    <Link to="/About" className="knowMeText">GET TO KNOW ME ➤</Link>
+                </div>
+            </div>
+            <div className="projectContainer">
+                {/* <div className="titlesWrapper"> */}
+                    <h1 className="h1Text">MY</h1>
+                    <h2 className="h2Text">Projects</h2>
+                {/* </div> */}
+                <div className="projectSection">
                     <ProjectCard 
                     title='Full Stack App'
                     photo={ photo } 
@@ -65,33 +94,32 @@ export default function Home() {
                     link='https://wayfarer-sei.herokuapp.com/'
                     />
                 </div> 
-            </section>
-            <section className="section4">
-                <div className="skillsCard-container">
-                    <h1 className="my2">MY</h1>
-                    <h1 className="skills-title">SKILLS</h1>
-                    <div className="skills-container">
-                        <SkillsCard
+            </div>
+            <div className="skillsContainer">
+                <h1 className="h1Text">MY</h1>
+                <h2 className="h2Text">SKILLS</h2>
+                <div className="skillsCardWrapper">
+                    <SkillsCard
                         title='JavaScript'
-                        />
-                        <SkillsCard
+                        icon={<FaGithub/>}
+                    />
+                    <SkillsCard
                         title='React'
-                        />
-                        <SkillsCard
+                    />
+                    <SkillsCard
                         title='Html'
-                        />
-                        <SkillsCard
+                    />
+                    <SkillsCard
                         title='Css'
-                        />
-                        <SkillsCard
+                    />
+                    <SkillsCard
                         title='Figma'
-                        />
-                        <SkillsCard
+                    />
+                    <SkillsCard
                         title='Wordpress'
-                        />
-                    </div>
+                    />
                 </div>
-            </section>
+            </div>
         </div>
     )
 }
