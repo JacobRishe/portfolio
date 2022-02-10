@@ -1,10 +1,27 @@
 import React from 'react'
 import './Skills.css'
 
-export default function SkillsCard({ title }) {
+
+export default function SkillsCard({ title, icon}) {
     return (
-        <div>
-            <h1 className='skills-card'>{ title }</h1>
+        <div style={skillsWrapper}>
+            <div>
+                <h1 style={skillsTitle}>{ title }</h1>
+            </div>
+            <div>{ icon }</div>
         </div>
     )
+}
+
+const skillsTitle = {
+    color: '#fff',
+    fontSize: '12px',
+    marginRight: '10px',
+}
+
+const skillsWrapper = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
 }
