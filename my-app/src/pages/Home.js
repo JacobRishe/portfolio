@@ -28,7 +28,9 @@ export default function Home() {
         <div className='container'>
             <div className='topContainer'>
                 <div className="textWrapper">
-                    <p className="welcomeText">Welcome, I'm</p>
+                    <div className='subtitleWrapper'>
+                        <p className="welcomeText">Welcome, I'm</p>
+                    </div>
                     <h1 className="nameText">Jacob Rishe</h1>
                     <div className="hidingEffect"></div>
                     <div className='iconContainer'>

@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     to {
         opacity: 1;
     }
@@ -11,9 +11,9 @@
     100% { transform: translateX(90px) ;}  
 }
 
-/* ---------------------splash page---------------------- */
 
-/* .splash {
+
+.splash {
     display: flex;
     position: fixed;
     top: 0;
@@ -39,7 +39,7 @@
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
     letter-spacing: 3px;
-} */
+}
 
 .container {
     display: flex;
@@ -53,7 +53,6 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     align-items: center;
-    /* width: 100%; */
 }
 
 .iconContainer {
@@ -123,10 +122,10 @@
     right: 0;
     width: 100%;
     background: #000;
-    /* -webkit-animation: text-slide 2s cubic-bezier(.5,.5,0,1);
+    -webkit-animation: text-slide 2s cubic-bezier(.5,.5,0,1);
     animation: text-slide 2s cubic-bezier(.5,.5,0,1);
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards; */
+    -webkit-animation-fill-mode: forwards;
 }
 
 .aboutSection {
@@ -153,7 +152,7 @@
     margin-bottom: 5px;
 }
 
-/* ---------------project Container------------------------ */
+
 
 .projectContainer {
     color: #eff1ff;
@@ -182,23 +181,23 @@
     font-family: var(--accent-font);
 }
 
-/* ---------------skills Container------------------------ */
+
 .skillsContainer {
     color: #eff1ff;
-    /* text-align: center; */
+   
     font-family: 'Lato', sans-serif;
-    /* align-items: center; */
+
     margin-bottom: 50px;
     margin-top: 20px;
-    /* border: 2px dotted blue; */
+   
 }
 
 .skillsCardWrapper {
-    /* width: 300px; */
+
     padding: 20px 20px 40px;
 }
 
-/* ------------------desktop------------------------------------------ */
+
 @media screen and (min-width: 768px) {
 
     @keyframes image-slide {
@@ -232,10 +231,9 @@
         width: 90%;
         margin: auto;
         font-family: 'Lato', sans-serif;
-        border: 2px solid #fff;
         height: 900px;
         justify-content: space-between;
-        margin-bottom: 0;
+        padding: 0;
     }
 
     .imgWrapper {
@@ -246,7 +244,7 @@
         left: 15%;
         transform: none;
         z-index: 1;
-        /* border: 1px dotted red; */
+       
     }
     
     .imgWrapper img {
@@ -258,6 +256,8 @@
         font-size: 400px;
         z-index: -10;
         border: 1px dotted red;
+        margin-top: 0px;
+        padding-top: 0px;
     }
 
     .h2Text {
@@ -267,13 +267,13 @@
         font-size: 40px;
         margin-top: -240px;
         margin-bottom: 50px;
-        /* border: 1px dotted red; */
+      
     }
 
     .iconContainer {
         display: flex;
         flex-direction: column;
-        /* border: 2px solid red; */
+       
         
         height: 650px;
         margin-left: -80px;
@@ -286,15 +286,14 @@
     }
 
     .textWrapper {
-        /* display: flex; */
+        
         flex-direction: row;
         margin-right: 0px;
         padding-right: 0px;
         align-items: center;
-        /* border: 2px solid red; */
-        /* background: linear-gradient(to right bottom, #1f224b 0%, #2d5d85 100%); */
+       
         border-radius: 20px;
-        /* justify-content: space-between; */
+        
     }
 
     .welcomeText {
@@ -306,29 +305,16 @@
         position: absolute;
         top: 16%;
         left: 15%;
-        /* margin-bottom: 0; */
-        /* margin-left: 0px;
-        margin-top: 0px; */
-        /* display: flex;
-        align-items: flex-start; */
-        /* justify-items: flex-start; */
-        
-        /* margin-right: 40px; */
-        /* border: 2px solid red; */
     }
     
     .nameText {  
-        /* color: #fff;
-        margin-top: 10px; */
+       
         font-size: 120px;
-        /* letter-spacing: 1px;
-        font-weight: 600;
-        font-family: var(--heading-font);
-        z-index: 2; */
+       
         writing-mode: vertical-lr;
         text-orientation: sideways;
         transform: rotate(180deg);
-        /* border: 1px dotted red; */
+      
     }
 
     p {
@@ -338,7 +324,7 @@
 
     .projectContainer {
         width: 100%;
-        /* display: flex; */
+      
         border: 2px solid red;
         align-items: center;
         margin-top: 0px;
@@ -350,6 +336,6 @@
         justify-content: space-around;
         z-index: 10;
         position: relative;
-        /* border: 1px dotted red; */
+      
     }
-}
+} */
