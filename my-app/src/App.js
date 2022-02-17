@@ -1,24 +1,24 @@
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import About from './pages/About';
-
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
+import AboutSection from './components/about/AboutSection';
+import ProjectSection from './components/project/ProjectSection';
+import SkillSection from './components/skills/SkillSection';
+import ContactSection from './components/contact/ContactSection';
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/projects' component = { Projects } />
-        <Route path='/contact' component = { Contact } />
-        <Route path='/about' component = { About } />
-        <Route path='/' component = { Home } />
-      </Switch>
+      <div className='topSection'>
+        <div className='navbarSection'>
+          <Navbar />
+        </div>
+        <AboutSection/>
+      </div>
+        <ProjectSection />
+        <SkillSection />
+        <ContactSection />
       <Footer />
     </Router>
   );

@@ -3,16 +3,34 @@
   --accent-font: 'Philosopher', sans-serif;
 }
 
-html {
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
 }
-  
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
   color: #fff;
-  margin: 0;
   width: 100%;
-  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarSection {
+  background-color: transparent;
+}
+
+.topSection {
   background-color: #000;
 }
