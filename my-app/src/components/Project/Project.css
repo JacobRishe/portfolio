@@ -1,17 +1,21 @@
-/* .project-title {
-    -webkit-text-stroke-width: 2px;
-    -moz-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff;
-    -moz-text-stroke-color: #fff;
-    color: transparent;
-    font-size: 60px;
-    font-weight: 900;
-} */
 
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(59, 103, 222), 0 0 40px rgb(75, 59, 222), 0 0 50px rgb(59, 84, 222), 0 0 60px rgb(59, 70, 222), 0 0 70px rgb(59, 84, 222);
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px rgb(63, 37, 177), 0 0 40px rgb(39, 37, 177), 0 0 50px rgb(63, 37, 177), 0 0 60px rgb(37, 51, 177), 0 0 70px rgb(37, 86, 177), 0 0 80px rgb(37, 81, 177);
+    }
+}
+
+.border {
+    display: flex;
+   
+    /* justify-content: space-around; */
+}
 
 .card-container {
     width: 340px;
-    /* padding: 20px 20px 40px; */
     height: 460px;
     box-shadow: 0px 4px 8px 3px #404144;
     overflow: hidden;
@@ -20,20 +24,10 @@
     text-align: center;
     border-radius: 10px;
     margin-top: 30px;
-    /* -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate; */
+    animation: glow 1s ease-in-out infinite alternate;
 }
-
-@keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(59, 103, 222), 0 0 40px rgb(75, 59, 222), 0 0 50px rgb(59, 84, 222), 0 0 60px rgb(59, 70, 222), 0 0 70px rgb(59, 84, 222);
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px rgb(63, 37, 177), 0 0 40px rgb(39, 37, 177), 0 0 50px rgb(63, 37, 177), 0 0 60px rgb(37, 51, 177), 0 0 70px rgb(37, 86, 177), 0 0 80px rgb(37, 81, 177);
-    }
-  }
-  
 
 .card-container:hover {
     transform: scale(1.0);
@@ -76,6 +70,23 @@
     margin-bottom: 7px;
 }
 
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #eff1ff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    /* border: 2px dotted red; */
+}
+
+.projectWrapper {
+    width: 90%;
+    justify-content: space-between;
+    /* border: 2px solid green */
+}
+
 @media screen and (min-width: 768px) {
     .card-container {
         width: 445px;
@@ -102,5 +113,11 @@
         overflow: hidden;
         height: 500px;
         width: 445px;
+    }
+
+    .projectWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
