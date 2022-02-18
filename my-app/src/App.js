@@ -5,7 +5,7 @@ import AboutSection from './components/about/AboutSection';
 import ProjectSection from './components/project/ProjectSection';
 import SkillSection from './components/skills/SkillSection';
 import ContactSection from './components/contact/ContactSection';
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 
 function App() {
   return (
@@ -16,7 +16,9 @@ function App() {
         </div>
         <AboutSection/>
       </div>
+      <div className='projectSection'>
         <ProjectSection />
+      </div>
         <SkillSection />
         <ContactSection />
       <Footer />

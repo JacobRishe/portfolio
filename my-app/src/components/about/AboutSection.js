@@ -1,7 +1,6 @@
 import React from 'react';
 import './About.css'
 import Image from '../../images/portfoliopic1.png'
-import { Link } from 'react-router-dom'
 import { FaReact } from 'react-icons/fa'
 import { AiFillGithub } from 'react-icons/ai'
 import { AiFillHtml5 } from 'react-icons/ai'
@@ -9,15 +8,14 @@ import { DiCss3 } from 'react-icons/di'
 import { DiJavascript1 } from 'react-icons/di'
 
 export default function AboutSection() {
+
   	return (
         <div className='topContainer'>
-          	<div className="textWrapper">
-				<div className='subtitleWrapper'>
-					<p className="welcomeText">Welcome, I'm</p>
-				</div>
-				<h1 className="nameText">Jacob Rishe</h1>
-				{/* <div className="hidingEffect"></div> */}
-				{/* <div className='iconContainer'>
+			{/* <div className="squareOutline" />
+			<div className="squareOutline2" /> */}
+          	<div className="textWrapper">			  
+				<h1 className="firstNameText">Jacob<span className="lastNameText">Rishe</span></h1>
+				<div className='iconContainer'>
 					<div className='iconsWrapper'>
 						<FaReact size={50}/>
 					</div>
@@ -42,10 +40,10 @@ export default function AboutSection() {
 					<div className='iconsWrapper'>
 						<AiFillHtml5 size={50}/>
 					</div>
-              	</div> */}
-			<div className="imgWrapper">
-				<img src={ Image } alt="portfolio image" />
-			</div>
+              	</div>
+				<div className="imgWrapper">
+					<img src={ Image } alt="portfolio of a man smiling" />
+				</div>
           	</div>
 			<div className="aboutSection">
 				<p className="focusText">Focus in Design</p>
