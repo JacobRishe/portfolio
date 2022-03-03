@@ -78,7 +78,7 @@ nav {
         color: #fff;
         letter-spacing: 1px;
         font-size: 1rem;
-        font-family: var(--heading-font);
+        font-family: var(--accent-font);
         transform: rotate(45deg);
         font-weight: 600;
     }

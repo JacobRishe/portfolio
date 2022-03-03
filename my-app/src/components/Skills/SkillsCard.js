@@ -23,5 +23,5 @@ const skillsWrapper = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
 }

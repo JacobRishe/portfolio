@@ -19,7 +19,9 @@ function App() {
       <div className='projectSection'>
         <ProjectSection />
       </div>
+      <div className="skillsSection">
         <SkillSection />
+      </div>
         <ContactSection />
       <Footer />
     </Router>
