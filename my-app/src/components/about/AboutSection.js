@@ -11,6 +11,7 @@ export default function AboutSection() {
 
   	return (
         <div className='topContainer'>
+			<div className="computerImg"/>
 			{/* <div className="squareOutline" />
 			<div className="squareOutline2" /> */}
           	<div className="textWrapper">			  
@@ -42,11 +43,11 @@ export default function AboutSection() {
 					</div>
               	</div>
 				<div className="imgWrapper">
-					<img src={ Image } alt="portfolio of a man smiling" />
+					<img src={ Image } alt="A man smiling with his arms crossed." />
 				</div>
           	</div>
 			<div className="aboutSection">
-				<p className="focusText">Focus in Design</p>
+				<p className="focusText">Focus in Frontend Design</p>
 				<h1 className="softEngineerText">Software Engineer</h1>
 				<p>Desiring a professional career building applications in React Native.</p>
 				<p>Experienced with integrating many native packages such as mapbox, calendars, icons, drawer, bottom sheet and more. Created a full stack responsive React Native app with auth and API calls through the use of axios, formik, and MongoDB. Allowed users to utilize CRUD functionality by creating state managmenet, hooks, and DOM manipulation.</p>
