@@ -8,12 +8,12 @@ import wayfarerpic from '../../images/wayfarerpic.jpeg'
 export default function ProjectSection() {
   return (
     <div className="projectContainer">
-		{/* <div className="titlesWrapper"> */}
+		<div className="titleWrapper">
 			<h1 className="h1Text">MY</h1>
 			<h2 className="h2Text">Projects</h2>
-		{/* </div> */}
+		</div>
 		<div className="projectWrapper">
-			<div>
+			<div className="borderLine">
 				<ProjectCard 
 				title='Full Stack App'
 				photo={ photo } 
