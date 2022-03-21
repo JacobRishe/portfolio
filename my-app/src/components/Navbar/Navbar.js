@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
+import {HashLink as Link} from 'react-router-hash-link'
 import './Navbar.css'
 
 
@@ -15,16 +16,16 @@ class Navbar extends Component {
             <nav>
                 <ul className="navLinks">
                     <div class="linkBackground">
-                        <li className="link"><a href="#">About</a></li>
+                        <li className="link"><Link className="linkTitle" smooth to="#about">About</Link></li>
                     </div>  
                     <div class="linkBackground">
-                        <li className="link"><a href="#">Projects</a></li>
+                        <li className="link"><Link className="linkTitle" smooth to="#projects">Projects</Link></li>
                     </div>  
                     <div class="linkBackground">
-                        <li className="link"><a href="#">Skills</a></li>
+                        <li className="link"><Link className="linkTitle" smooth to="#skills">Skills</Link></li>
                     </div>  
                     <div class="linkBackground">
-                        <li className="link"><a href="#">Contact</a></li>
+                        <li className="link"><Link className="linkTitle" smooth to="#contact">Contact</Link></li>
                     </div>  
                 </ul>
                 <div className="iconWrapper" onClick={ this.handleClick }>
@@ -34,9 +35,9 @@ class Navbar extends Component {
                     { MenuItems.map((item, index) => {
                         return(
                             <li className="links" key={ index }>
-                                <a className={ item.cName } href={ item.url }>
-                                { item.title }
-                                </a>
+                                <Link smooth to={item.url} className={ item.cName }>
+                                    { item.title }
+                                </Link>
                             </li>
                         )
                     })}

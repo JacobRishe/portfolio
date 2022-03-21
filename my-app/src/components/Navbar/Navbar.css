@@ -12,26 +12,12 @@ nav {
     display: none;
 }
 
-/* .navbar-logo {
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Philosopher', sans-serif;
-    font-weight: 900;
-    font-size: 35px;
-    letter-spacing: 2px;
-} */
-
-/* .letter-r {
-    position: absolute;
-    margin-top: 7px;
-} */
-
 .links {
     text-align: center;
     padding: 2rem 1rem;
     font-size: 2rem;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--accent-font);
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: capitalize;
@@ -59,21 +45,21 @@ nav {
 }
 
 .nav-menu.active {
-    background: #00000adb;
+    background: #000;
     left: 0;
-    opacity: 1;
+    opacity: .7;
     transition: all 0.5s ease;
     z-index: 100;
     padding: 0;
 }
 
-.links a{
+.links a {
     color: #fff;
     opacity: .7;
 }
 
 @media screen and (min-width: 768px) {
-    a {
+   .linkTitle {
         text-decoration: none;
         color: #fff;
         letter-spacing: 1px;
@@ -84,13 +70,13 @@ nav {
     }
 
     nav {
-        position: absolute;
+        position: fixed;
+        z-index: 20;
         top: 10%;
         Right: 0;
         display: flex;
         align-items: center;
         min-height: 10vh;
-        /* border: 2px solid red; */
         height: 50vh;
         width: 5vw;
         min-width: 8rem;
@@ -105,11 +91,9 @@ nav {
         display: flex;
         justify-content: center;
         width: 100px;
-        /* min-width: 5rem; */
         height: 100px;
         border-radius: 20%;
         background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
-        /* padding: 1vw; */
     }
 
     .linkBackground:hover {
@@ -139,6 +123,12 @@ nav {
     
     .nav-menu {
         display: none;
+    }
+
+    li > a:hover {
+        color: #54b3d6;
+        font-weight: 800;
+        font-size: 1.2rem;
     }
 
    
