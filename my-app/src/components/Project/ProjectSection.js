@@ -7,7 +7,7 @@ import wayfarerpic from '../../images/wayfarerpic.jpeg'
 
 export default function ProjectSection() {
   return (
-    <div className="projectContainer">
+    <div className="projectContainer" id="projects">
 		<div className="titleWrapper">
 			<h1 className="h1Text">MY</h1>
 			<h2 className="h2Text">Projects</h2>
@@ -26,7 +26,7 @@ export default function ProjectSection() {
 				title='Moovie Wiz'
 				photo={ picture }
 				body='API App'
-				link='https://github.com/JacobRishe/API_APP'
+				link='https://jacobrishe.github.io/API_APP/'
 				/>
 			</div>
 			<div>
