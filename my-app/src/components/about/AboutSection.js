@@ -10,10 +10,8 @@ import { DiJavascript1 } from 'react-icons/di'
 export default function AboutSection() {
 
   	return (
-        <div className='topContainer'>
+        <div className='topContainer' id="about">
 			<div className="computerImg"/>
-			{/* <div className="squareOutline" />
-			<div className="squareOutline2" /> */}
           	<div className="textWrapper">			  
 				<h1 className="firstNameText">Jacob<span className="lastNameText">Rishe</span></h1>
 				<div className='iconContainer'>

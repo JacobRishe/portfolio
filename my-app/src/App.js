@@ -22,8 +22,10 @@ function App() {
       <div className="skillsSection">
         <SkillSection />
       </div>
-        <ContactSection />
-      <Footer />
+      <div className="contactSection">
+        <ContactSection />  
+        <Footer />
+      </div>
     </Router>
   );
 }
