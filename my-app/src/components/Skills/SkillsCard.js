@@ -5,9 +5,7 @@ import './Skills.css'
 export default function SkillsCard({ title, icon}) {
     return (
         <div style={skillsWrapper}>
-            <div>
-                <h1 style={skillsTitle}>{ title }</h1>
-            </div>
+            <h1 style={skillsTitle}>{ title }</h1>
             <div>{ icon }</div>
         </div>
     )
