@@ -131,9 +131,9 @@
         background: none;
         text-align: left;
         padding: 2vw;
-        width: 70%;
-        height: 500px;
-        margin-top: 30vh;
+        width: 72%;
+        height: 400px;
+        margin-top: 22vh;
         z-index: 0;
         position: relative;
         box-shadow:
@@ -152,15 +152,15 @@
         background-size: cover;
         position: absolute;
         z-index: 0;
-        top: 14vh;
-        left: 44vw;
+        top: -7vh;
+        left: 43vw;
         /* border: 2px solid red; */
         width: 772px;
         height: 562px;
     }
 
     .focusText {
-        font-size: 1.2rem;
+        font-size: .9rem;
         letter-spacing: 1px;
         margin-bottom: 10px;
     }
@@ -233,7 +233,7 @@
     } */
 
     .softEngineerText {
-        padding: 20px 0 50px;
+        padding: 0 0 40px;
         font-size: 4vw;
         letter-spacing: 1px;
     }
@@ -261,7 +261,7 @@
     } */
     
     .firstNameText {  
-        font-size: 120px;
+        font-size: 6rem;
         writing-mode: vertical-lr;
         text-orientation: sideways;
         transform: rotate(180deg);
