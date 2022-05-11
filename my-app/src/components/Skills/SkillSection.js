@@ -20,7 +20,7 @@ export default function SkillSection() {
 				</div>
 			</div>
 			<div className="btnWrapper">
-				<a href="https://github.com/JacobRishe/portfolio/blob/main/JacobRishe_Resume.pdf">
+				<a href="https://github.com/JacobRishe/portfolio/blob/0325dabbf2b50d989d65732c3dcbdf93615f4598/JacobRishe_Resume.pdf">
 					<button class="download-btn">Download CV</button>
 				</a> 
 			</div>
