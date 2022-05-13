@@ -9,7 +9,6 @@
     background: -webkit-linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
     color: #fff;
     cursor: pointer;
-    filter: brightness(0.5);
     backdrop-filter: blur(20px);
     border-bottom-left-radius: 100px;
     border-top-right-radius: 100px;
@@ -67,6 +66,7 @@
         width: 60rem;
         border: 5px solid #000;
         font-size: 1rem;
+        filter: brightness(0.5);
     }
 
     .download-btn:hover {
@@ -92,7 +92,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* border: 2px solid red; */
     }
 
     .scratchText {
