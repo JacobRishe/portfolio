@@ -1,0 +1,137 @@
+
+.iconWrapper {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.links a {
+    color: #fff;
+    opacity: .7;
+}
+
+.links {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: var(--accent-font);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    list-style-type: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navLinks {
+    display: none;
+}
+
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 10vh;
+    left: -300px;
+    opacity: 1.2;
+    transition: all 0.5s ease;
+}
+
+.nav-menu.active {
+    background: #000;
+    left: 0;
+    opacity: .7;
+    transition: all 0.5s ease;
+    z-index: 100;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+   .linkTitle {
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 1px;
+        font-size: .8rem;
+        font-family: var(--accent-font);
+        transform: rotate(45deg);
+        font-weight: 600;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 20;
+        top: 10%;
+        Right: 0;
+        display: flex;
+        align-items: center;
+        min-height: 10vh;
+        height: 60vh;
+        width: 5vw;
+        min-width: 8rem;
+        padding: 0;
+    }
+
+    .iconWrapper {
+        display: none;
+    }
+
+    .linkBackground {
+        display: flex;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 20%;
+        background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    }
+
+    .linkBackground:hover {
+        box-shadow: inset 100px 0 0 0 #54b3d6;
+        transition: all .6s ease-out;
+    }
+
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+
+    li > a:hover {
+        color: #54b3d6;
+        font-weight: 800;
+        font-size: 1rem;
+    }
+
+   
+}

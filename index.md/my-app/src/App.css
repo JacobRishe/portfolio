@@ -1,0 +1,66 @@
+:root {
+  --heading-font: 'Lato', sans-serif;
+  --accent-font: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarSection {
+  background-color: transparent;
+}
+
+.skillsSection {
+  background-color: #000;
+  height: 20vh;
+}
+
+.topSection {
+  background-color: #000;
+  height: 87vh;
+}
+
+.projectSection {
+  background-color: #000;
+}
+
+.contactSection {
+  height: 80vh;
+  background-color: #000;
+}
+
+@media screen and (min-width: 768px) {
+
+  .projectSection {
+    background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    height: 100vh;
+  }
+
+  .skillsSection {
+    height: 80vh;
+  }
+
+  .topSection {
+    height: 100vh;
+  }
+}

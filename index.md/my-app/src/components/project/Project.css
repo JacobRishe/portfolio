@@ -1,0 +1,188 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(59, 103, 222), 0 0 40px rgb(75, 59, 222), 0 0 50px rgb(59, 84, 222), 0 0 60px rgb(59, 70, 222), 0 0 70px rgb(59, 84, 222);
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px rgb(63, 37, 177), 0 0 40px rgb(39, 37, 177), 0 0 50px rgb(63, 37, 177), 0 0 60px rgb(37, 51, 177), 0 0 70px rgb(37, 86, 177), 0 0 80px rgb(37, 81, 177);
+    }
+}
+
+.card-container {
+    width: 340px;
+    height: 460px;
+    box-shadow: 0px 1px 10px 1px #fff;
+    overflow: hidden;
+    transition: 0.3s;
+    animation: ease-in;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.card-container:hover {
+    transform: scale(1.0);
+    box-shadow: 0px 0px 15px 0px;
+}
+
+.card-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 10vh;
+    margin-left: 5vw;
+}
+
+.h1Text {
+    font-size: 6rem;
+    margin: 0;
+    background: radial-gradient(#eff1ff, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(0.5);
+    font-family: var(--heading-font);
+}
+
+.h2Text {
+    position: relative;
+    z-index: 10;
+    margin-top: -9vh;
+    margin-bottom: 5vh;
+    letter-spacing: 2px;
+    font-family: var(--accent-font);
+}
+
+.image-container img {
+    overflow: hidden;
+    height: 380px;
+    width: 340px;
+}
+
+.card-title {
+    font-size: 2vh;
+    line-height: 1.08349;
+    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--heading-font);
+    margin: 0;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.card-paragraph {
+    font-size: 1.5vh;
+    line-height: 1.08349;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    font-family: var(--accent-font);
+    margin-bottom: 7px;
+}
+
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eff1ff;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    /* font-family: 'Lato', sans-serif; */
+    /* border: 2px dotted red; */
+}
+
+@media screen and (min-width: 768px) {
+
+    .border {
+        display: flex;
+    }
+    
+    .card-container {
+        /* width: 445px; */
+        /* padding: 20px 20px 40px; */
+        /* height: 600px; */
+        margin-top: 0;
+        /* border-color: linear-gradient(130deg,#FFE599,#CC0000,#6AA84F 41.07%,#3C78D8 76.05%);
+        border-width: 4px;
+        border-style: solid; */
+        background: #000;
+        box-shadow: 2px 2px 15px 4px #000;
+        /* padding: 2px; */
+    }
+
+    .card-container:hover {
+        transform: scale(1.0);
+        background: #000;
+        box-shadow: 2px 2px 15px 4px #fff;
+    }
+
+    .card-content {
+        margin-left: 2vw;
+    }
+    
+    .border {
+        padding: 4px;
+        border-radius: 20px;
+        /* border-bottom-right-radius: 80px;
+        border-top-left-radius: 80px; */
+    }
+
+    .h1Text {
+        font-size: 40vh;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'times';
+        right: 0;
+        text-align: center;
+        top: 90vh;
+        z-index: 0;
+        color: #000;
+        background: #000;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .h2Text {
+        font-size: 10vh;
+        margin-top: 0;
+    }
+
+    .image-container img {
+        overflow: hidden;
+        /* height: 500px;
+        width: 445px; */
+    }
+
+    .projectContainer {
+        padding-top: 0;
+        text-align: right;
+    }
+
+    .projectWrapper {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        z-index: 10;
+    }
+
+    .titleWrapper {
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 8vw;
+        display: flex;
+        width: 100%;
+        height: 30vh;
+    }
+}
